@@ -1,0 +1,31 @@
+.dropdown {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    @include text-label();
+    &.open .dropdown {
+        color: $color-title;
+    }
+}
+
+.open > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    margin: 5px 0 0;
+    list-style: none;
+    border-radius: 5px;
+    padding: 0.5rem 0;
+    box-shadow: 0px 0px 5px 0px $color-border;
+    @include text-main();
+    li a {
+        display: block;
+        padding: 0.15rem 1.7rem;
+    }
+}
