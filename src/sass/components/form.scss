@@ -1,0 +1,35 @@
+.form-item {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    @include text-label();
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    @include text-main();
+    border: 2px solid $color-border;
+    @include transition (all 0.12s linear);
+    &:placeholder-shown {
+        @include text-placeholder();
+    }
+    &:hover {
+        border: 2px solid darken($color-border, 15);
+    }
+    &:focus {
+        border: 2px solid $color-ok-solid;
+    }
+}
+
+.form-error {
+    .form-label {
+        @include text-label();
+        color: $color-warning-text;
+    }
+    .form-input {
+        border: 2px solid $color-warning-solid;
+    }
+}

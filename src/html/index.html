@@ -14,17 +14,36 @@
 </head>
 <body id="app">
 
-        <top></top>
+        <v-header></v-header>
 
         <div class="wrapper">
-            <typography></typography>
+            <v-typography></v-typography>
 
-            <divider type="wide"></divider>
+            <v-divide type="wide"></v-divide>
 
-            <button type="action">Call to action</button>
-            <button type="general">General action</button>
-            <button type="warning">Delete action</button>
-            <button type="disabled">Disabled</button>
+            <v-button type="action">Call to action</v-button>
+            <v-button type="general">General action</v-button>
+            <v-button type="warning">Delete action</v-button>
+            <v-button type="disabled">Disabled</v-button>
+
+            <v-divide type="wide"></v-divide>
+
+            <v-input
+                type="text"
+                label="Form label"
+                error="false"
+                value="This form has content"
+                placeholder="Placeholder text">
+            </v-input>
+
+            <v-input
+                type="text"
+                label="Form label"
+                error="true"
+                message="Label replaced with error message"
+                placeholder="Placeholder text">
+            </v-input>
+
         </div>
 
     <script src="js/main.js"></script>

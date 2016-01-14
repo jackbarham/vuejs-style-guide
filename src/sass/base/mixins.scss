@@ -24,3 +24,34 @@ $base-font-size-for-rem-calc: 16;
 
     }
 }
+
+@mixin text-main() {
+    @include font-size(15);
+    color: $color-general;
+    letter-spacing: 0.4px;
+}
+
+@mixin text-menulist() {
+    font-weight: $font-weight-semibold;
+    @include font-size(15);
+    color: $color-title;
+    letter-spacing: 0.3px;
+}
+
+@mixin text-placeholder() {
+    @include font-size(15);
+    color: $color-disabled;
+    letter-spacing: 0.3px;
+}
+
+@mixin text-label() {
+    @include font-size(13);
+    color: $color-label;
+    letter-spacing: 0.4px;
+}
+
+@mixin text-descrete() {
+    @include font-size(13);
+    color: $color-descrete;
+    letter-spacing: 0.4px;
+}

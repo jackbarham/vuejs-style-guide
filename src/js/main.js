@@ -1,11 +1,18 @@
 var Vue = require('vue');
 
-import Top from './components/Top.vue';
-import Typography from './components/Typography.vue';
-import Button from './components/Button.vue';
-import Divider from './components/Divider.vue';
+import button from './components/button.vue';
+import divider from './components/divider.vue';
+import header from './components/header.vue';
+import input from './components/input.vue';
+import typography from './components/typography.vue';
 
 new Vue({
     el: '#app',
-    components: { Top, Typography, Button, Divider },
+    components: {
+        'v-button': button,
+        'v-divide': divider,
+        'v-header': header,
+        'v-input': input,
+        'v-typography': typography
+    }
 });
