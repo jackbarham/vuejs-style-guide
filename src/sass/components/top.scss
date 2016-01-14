@@ -1,0 +1,13 @@
+.header {
+    border-bottom: 1px solid lighten($color-border, 15);
+    h1 {
+        line-height: 60px;
+        float: left;
+        margin-left: 2rem;
+    }
+    p {
+        line-height: 60px;
+        float: right;
+        margin-right: 2rem;
+    }
+}

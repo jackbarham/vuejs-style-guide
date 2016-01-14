@@ -1,0 +1,17 @@
+.cf {
+    &:before, &:after {
+        content:" ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.inline {
+    @include remove-list-styling;
+    width: 100%;
+    li {
+        display: inline-block;
+    }
+}

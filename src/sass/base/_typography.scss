@@ -1,0 +1,84 @@
+// FONTS & TYPOGRAPHY
+
+body, input, select, textarea, button {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', 'san-serif';
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: $line-height-general;
+    color: $color-general;
+    font-size: $font-size-general;
+}
+
+a, a:visited {
+    outline: none;
+    text-decoration: none;
+    color: $color-ok-text;
+    @include transition (all 0.2s linear);
+    &:hover {
+        color: darken($color-ok-text, 15);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $font-weight-regular;
+    color: $color-title;
+    letter-spacing: 0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+h1.t-logo {
+    font-weight: $font-weight-semibold;
+    @include font-size(21);
+    color: $color-title;
+    letter-spacing: 0.2px;
+}
+
+h2.t-header-main {
+    @include font-size(29);
+}
+
+h3.t-header-sub {
+    @include font-size(21);
+}
+
+p {
+    @include font-size(15);
+    color: $color-general;
+    letter-spacing: 0.4px;
+    line-height: $line-height-general;
+    margin: 0;
+    padding: 0;
+}
+
+.t-menu-list {
+    font-weight: $font-weight-semibold;
+    @include font-size(15);
+    color: $color-title;
+    letter-spacing: 0.3px;
+}
+
+.t-disabled {
+    @include font-size(15);
+    color: $color-disabled;
+    letter-spacing: 0.3px;
+}
+
+.t-label {
+    @include font-size(13);
+    color: $color-label;
+    letter-spacing: 0.4px;
+}
+
+.t-descrete {
+    @include font-size(13);
+    color: $color-descrete;
+    letter-spacing: 0.4px;
+}
+
+.t-wrap {
+    margin-bottom: 0.7rem;
+}

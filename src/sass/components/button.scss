@@ -1,0 +1,43 @@
+.button {
+    overflow: visible;
+    background: none;
+    border: 2px solid $color-border;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 20px;
+    @include font-size(13);
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-disabled;
+    font-weight: $font-weight-semibold;
+    @include transition (all 0.1s linear);
+    &.action {
+        border-color: $color-cta-solid;
+        color: $color-cta-text;
+        &:hover {
+            background: $color-cta-solid;
+            color: $color-white;
+        }
+    }
+    &.general {
+        border-color: $color-ok-solid;
+        color: $color-ok-text;
+        &:hover {
+            background: $color-ok-solid;
+            color: $color-white;
+        }
+    }
+    &.warning {
+        border-color: $color-warning-solid;
+        color: $color-warning-text;
+        &:hover {
+            background: $color-warning-solid;
+            color: $color-white;
+        }
+    }
+}
+
+.button.disabled {
+    cursor: not-allowed;
+}

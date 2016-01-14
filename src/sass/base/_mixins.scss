@@ -1,0 +1,26 @@
+// MIXINS
+
+// Base font size
+$base-font-size-for-rem-calc: 16;
+@mixin rem-polyfill($desired-rem-size) {
+    font-size: ($desired-rem-size * $base-font-size-for-rem-calc) + px;
+    font-size: $desired-rem-size + rem;
+}
+
+@mixin font-size($desired-pixel-size) {
+    $desired-rem-size: $desired-pixel-size / $base-font-size-for-rem-calc;
+    font-size: ($desired-rem-size * $base-font-size-for-rem-calc) + px;
+    font-size: $desired-rem-size + rem;
+}
+
+// Reset list stlying
+@mixin remove-list-styling() {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style-type: none;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+}

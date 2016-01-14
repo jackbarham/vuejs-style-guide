@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "bourbon": "^4.2.6",
+    "http-server": "^0.8.5"
+  },
+  "dependencies": {
+    "laravel-elixir": "^4.0.0",
+    "laravel-elixir-vueify": "^1.0.2"
+  }
+}
