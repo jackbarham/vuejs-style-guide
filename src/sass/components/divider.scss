@@ -1,0 +1,8 @@
+.divider {
+    border: 0;
+    height: 1px;
+    background: lighten($color-border, 15);
+    &.wide {
+        margin: 2rem 0;
+    }
+}
