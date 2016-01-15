@@ -14,47 +14,73 @@
 </head>
 <body id="app">
 
-        <v-header></v-header>
+    <layout-header></layout-header>
 
-        <div class="wrapper">
+    <div class="wrapper">
 
-            <v-typography></v-typography>
+        <div id="typography" class="styleguide-section">
+            <div class="t-wrap">
+                <h2 class="t-header-main">Content header and title</h2>
+            </div>
+            <div class="t-wrap">
+                <h3 class="t-header-sub">Item and sub title</h3>
+            </div>
+            <div class="t-wrap">
+                <span class="t-menu-list">Menu and list title</span>
+            </div>
+            <div class="t-wrap">
+                <span class="t-disabled">Placeholder text</span>
+            </div>
+            <div class="t-wrap">
+                <span class="t-label">Label and dropdown</span>
+            </div>
+            <div class="t-wrap">
+                <span class="t-descrete">Descrete content and page URL</span>
+            </div>
+            <div class="t-wrap">
+                <p>General text and form content. Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">nostrud exercitation ullamco</a> laboris nisi ut aliquip ex ea.</p>
+            </div>
+        </div>
 
-        <v-divide type="wide"></v-divide>
+        <div id="button" class="styleguide-section">
+            <click type="action">Add new item</click>
+            <click type="general">Confirm</click>
+            <click type="warning">Delete</click>
+            <click type="disabled">Disabled</click>
+        </div>
 
-            <v-button type="action">Call to action</v-button>
-            <v-button type="general">General action</v-button>
-            <v-button type="warning">Delete action</v-button>
-            <v-button type="disabled">Disabled</v-button>
+        <div id="form" class="styleguide-section">
+            <form-input
+                    type="text"
+                    label="Form label"
+                    error="false"
+                    value="This form has content"
+                    placeholder="Placeholder text">
+            </form-input>
 
-        <v-divide type="wide"></v-divide>
+            <form-input
+                    type="text"
+                    label="Form label"
+                    error="true"
+                    message="Label replaced with error message"
+                    placeholder="Placeholder text">
+            </form-input>
+        </div>
 
-            <v-input
-                type="text"
-                label="Form label"
-                error="false"
-                value="This form has content"
-                placeholder="Placeholder text">
-            </v-input>
-
-            <v-input
-                type="text"
-                label="Form label"
-                error="true"
-                message="Label replaced with error message"
-                placeholder="Placeholder text">
-            </v-input>
-
-        <v-divide type="wide"></v-divide>
-
-            <v-drop text="Dropdown">
+        <div id="dropdown" class="styleguide-section">
+            <drop-click text="Dropdown click">
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Completed</a></li>
                     <li><a class="dropdown-item" href="#">Pending</a></li>
                 </ul>
-            </v-drop>
-
+            </drop-click>
         </div>
+
+        <div id="image-upload" class="styleguide-section">
+            <upload-image info="Specific image specification details here"></upload-image>
+        </div>
+
+</div>
 
     <script src="js/main.js"></script>
 </body>
