@@ -14,10 +14,10 @@
                 var type = this.type;
                 return {
                     'button': true,
-                    'disabled': type == 'disabled',
-                    'action': type == 'action',
-                    'general': type == 'general',
-                    'warning': type == 'warning'
+                    'button-disabled': type == 'disabled',
+                    'button-action': type == 'action',
+                    'button-general': type == 'general',
+                    'button-warning': type == 'warning'
                 }
             }
         }

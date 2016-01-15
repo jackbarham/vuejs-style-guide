@@ -1,7 +1,17 @@
 <template>
-    <button :class="buttonClass">
-        <slot></slot>
-    </button>
+    <div v-if="!image">
+        <div class="dropzone-area">
+            <div class="dropzone-text">
+                <span class="dropzone-title">Drop image here or click to select</span>
+                <span class="dropzone-info" v-if="info">{{ info }}</span>
+            </div>
+            <input type="file" @change="onFileChange">
+        </div>
+    </div>
+    <div class="dropzone-preview" v-else>
+        <img :src="image" />
+        <button class="button button-warning dropzone-button" @click="removeImage">Delete</button>
+    </div>
 </template>
 
 <script>
@@ -9,16 +19,31 @@
 
         props: ['info'],
 
-        computed: {
-            buttonClass() {
-                var type = this.type;
-                return {
-                    'button': true,
-                    'disabled': type == 'disabled',
-                    'action': type == 'action',
-                    'general': type == 'general',
-                    'warning': type == 'warning'
-                }
+        data() {
+            return {
+                info: '',
+                image: ''
+            }
+        },
+
+        methods: {
+            onFileChange(e) {
+                var files = e.target.files || e.dataTransfer.files;
+                if (!files.length) return;
+                this.createImage(files[0]);
+            },
+            createImage(file) {
+                var image = new Image();
+                var reader = new FileReader();
+                var vm = this;
+
+                reader.onload = (e) => {
+                    vm.image = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            },
+            removeImage: function (e) {
+                this.image = '';
             }
         }
 

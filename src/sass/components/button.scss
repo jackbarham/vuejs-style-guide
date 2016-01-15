@@ -11,8 +11,8 @@
     text-transform: uppercase;
     color: $color-disabled;
     font-weight: $font-weight-semibold;
-    @include transition (all 0.1s linear);
-    &.action {
+    @include transition (all 0.12s linear);
+    &.button-action {
         border-color: $color-cta-solid;
         color: $color-cta-text;
         &:hover {
@@ -20,7 +20,7 @@
             color: $color-white;
         }
     }
-    &.general {
+    &.button-general {
         border-color: $color-ok-solid;
         color: $color-ok-text;
         &:hover {
@@ -28,7 +28,7 @@
             color: $color-white;
         }
     }
-    &.warning {
+    &.button-warning {
         border-color: $color-warning-solid;
         color: $color-warning-text;
         &:hover {
