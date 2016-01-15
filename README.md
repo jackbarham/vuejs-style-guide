@@ -10,13 +10,12 @@ This project requires the latest version of [npm](https://www.npmjs.org/).
 
 ## Setup
 
-Clone or download the repository, then:
+Clone or download the repository, then in terminal run:
 
 * `cd vuejs-style-guide`
 * `npm install`
 * `gulp`
-* `http-server`
 
-For continious development run `gulp watch` and to minify assets run `gulp --production`.
+If you want to fire up a local server run `http-server public`. For continious development run `gulp watch` where all assets will be moved to a `public` folder. To minify assets run `gulp --production`.
 
 *This project is actively being worked on*
