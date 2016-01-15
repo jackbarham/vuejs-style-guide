@@ -1,6 +1,6 @@
 <template>
     <div v-if="!image">
-        <div class="dropzone-area">
+        <div class="dropzone-area" drag-over="handleDragOver">
             <div class="dropzone-text">
                 <span class="dropzone-title">Drop image here or click to select</span>
                 <span class="dropzone-info" v-if="info">{{ info }}</span>
@@ -8,7 +8,7 @@
             <input type="file" @change="onFileChange">
         </div>
     </div>
-    <div class="dropzone-preview" v-else>
+    <div class="dropzone-preview">
         <img :src="image" />
         <button class="button button-warning dropzone-button" @click="removeImage">Delete</button>
     </div>
@@ -17,11 +17,10 @@
 <script>
     export default {
 
-        props: ['info'],
+        props: ['info', 'drag-ove'],
 
         data() {
             return {
-                info: '',
                 image: ''
             }
         },

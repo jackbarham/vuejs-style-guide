@@ -1,40 +1,46 @@
 .button {
-    overflow: visible;
-    background: none;
-    border: 2px solid $color-border;
     height: 40px;
-    border-radius: 5px;
+    background: none;
     padding: 0 20px;
-    @include font-size(13);
-
+    overflow: visible;
+    border-radius: 5px;
+    margin-left: 1rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    @include font-size(13);
     color: $color-disabled;
+    text-transform: uppercase;
+    border: 2px solid $color-border;
     font-weight: $font-weight-semibold;
     @include transition (all 0.12s linear);
-    &.button-action {
-        border-color: $color-cta-solid;
-        color: $color-cta-text;
-        &:hover {
-            background: $color-cta-solid;
-            color: $color-white;
-        }
+    &:first-child {
+        margin-left: 0;
     }
-    &.button-general {
-        border-color: $color-ok-solid;
-        color: $color-ok-text;
-        &:hover {
-            background: $color-ok-solid;
-            color: $color-white;
-        }
+}
+
+.button-action {
+    border-color: $color-cta-solid;
+    color: $color-cta-text;
+    &:hover {
+        background: $color-cta-solid;
+        color: $color-white;
     }
-    &.button-warning {
-        border-color: $color-warning-solid;
-        color: $color-warning-text;
-        &:hover {
-            background: $color-warning-solid;
-            color: $color-white;
-        }
+}
+
+.button-general {
+    border-color: $color-ok-solid;
+    color: $color-ok-text;
+    &:hover {
+        background: $color-ok-solid;
+        color: $color-white;
+    }
+}
+
+.button-warning {
+    border-color: $color-warning-solid;
+    color: $color-warning-text;
+    &:hover {
+        background: $color-warning-solid;
+        color: $color-white;
     }
 }
 

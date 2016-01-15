@@ -6,6 +6,7 @@
     @include transition (all 0.12s linear);
     &:hover {
         border: 2px dashed $color-ok-solid;
+
     }
 }
 
