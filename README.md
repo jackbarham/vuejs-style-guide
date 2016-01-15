@@ -14,8 +14,8 @@ Clone or download the repository, then in terminal run:
 
 * `cd vuejs-style-guide`
 * `npm install`
-* `gulp` (creates a `public` folder with assets)
+* `gulp`
 
-If you want to fire up a local server run `http-server public`. For continious development run `gulp watch`. To minify assets run `gulp --production`.
+A `public` folder is created with assets. If you want to fire up a local server run `http-server public`. For continious development run `gulp watch`. To minify assets run `gulp --production`.
 
 *This project is actively being worked on*
