@@ -1,6 +1,6 @@
 # UI Style Guide
 
-UI style guide built with [Vue.js](http://vuejs.org) using [Laravel Elixir](https://github.com/laravel/elixir), [Browserify](https://github.com/laravel/elixir) and [Elixir Vueify](https://github.com/JeffreyWay/laravel-elixir-vueify)
+An intractive UI style guide for a project I'm working on. Built with [Vue.js](http://vuejs.org) using [Laravel Elixir](https://github.com/laravel/elixir), [Browserify](https://github.com/laravel/elixir) and [Elixir Vueify](https://github.com/JeffreyWay/laravel-elixir-vueify)
 
 - Live demo: [jackbarham.github.io/vuejs-style-guide](http://jackbarham.github.io/vuejs-style-guide)
 
