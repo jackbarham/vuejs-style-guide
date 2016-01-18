@@ -29,6 +29,35 @@
     position: relative;
 }
 
+
+
+
+.modal-full {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+    display: table;
+    transition: opacity .12s linear;
+}
+
+.modal-full-wrapper {
+    padding: 6rem 2rem;
+    margin: 0 auto;
+    max-width: 640px;
+    box-sizing: inherit;
+    position: relative;
+    transition: all .12s ease-in;
+    .modal-close {
+        top: 6.2rem;
+        right: -4rem;
+        transform: translate(0, 0);
+    }
+}
+
 .modal-close {
     //background-color:lime;
     height: 25px;
@@ -80,5 +109,12 @@
 .modal-leave .modal-container {
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
+    opacity: 0;
+}
+
+.modal-enter .modal-full-wrapper,
+.modal-leave .modal-full-wrapper {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
     opacity: 0;
 }

@@ -30,7 +30,7 @@ h2.t-header-main {
     @include font-size(29);
 }
 
-h3.t-header-sub {
+h3 {
     @include font-size(21);
 }
 
@@ -39,6 +39,10 @@ p {
     line-height: $line-height-general;
     margin: 0;
     padding: 0;
+    margin-bottom: 1rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .t-menu-list {
