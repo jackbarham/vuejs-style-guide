@@ -1,6 +1,6 @@
 <template>
     <div v-if="!image">
-        <div class="dropzone-area" drag-over="handleDragOver">
+        <div class="dropzone-area" @dragenter="hovering = true" @dragleave="hovering = false" :class="{'dropzone-hover': hovering}">
             <div class="dropzone-text">
                 <span class="dropzone-title">Drop image here or click to select</span>
                 <span class="dropzone-info" v-if="info">{{ info }}</span>
@@ -8,7 +8,7 @@
             <input type="file" @change="onFileChange">
         </div>
     </div>
-    <div class="dropzone-preview">
+    <div class="dropzone-preview" v-else>
         <img :src="image" />
         <button class="button button-warning dropzone-button" @click="removeImage">Delete</button>
     </div>
@@ -17,11 +17,12 @@
 <script>
     export default {
 
-        props: ['info', 'drag-ove'],
+        props: ['info'],
 
         data() {
             return {
-                image: ''
+                image: '',
+                hovering: false
             }
         },
 
@@ -38,6 +39,7 @@
 
                 reader.onload = (e) => {
                     vm.image = e.target.result;
+                    vm.hovering = false;
                 };
                 reader.readAsDataURL(file);
             },

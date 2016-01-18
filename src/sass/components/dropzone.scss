@@ -4,9 +4,11 @@
     position: relative;
     border: 2px dashed $color-border;
     @include transition (all 0.12s linear);
-    &:hover {
+    &:hover, &.dropzone-hover {
         border: 2px dashed $color-ok-solid;
-
+        .dropzone-title {
+            color: darken($color-ok-text, 10);
+        }
     }
 }
 

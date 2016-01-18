@@ -10,8 +10,29 @@ html {
     outline: none;
 }
 
-.wrapper {
+.layout-wrapper {
     max-width: 680px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 6rem 2rem;
+}
+
+.layout-header {
+    border-bottom: 1px solid lighten($color-border, 15);
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    h1 {
+        @include logo();
+        line-height: 60px;
+        float: left;
+        margin-left: 2rem;
+    }
+    span {
+        @include text-label();
+        float: right;
+        line-height: 60px;
+        float: right;
+        margin-right: 2rem;
+    }
 }

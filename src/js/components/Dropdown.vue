@@ -1,14 +1,17 @@
 <template>
-    <div v-bind:class="{ open: show, dropdown: !dropup, dropup: dropup}">
+    <div :class="{ open: show, dropdown: !dropup, dropup: dropup}">
         <button
-            class="dropdown"
+            class="dropdown-button"
             aria-expanded="{{show}}"
-            v-on:click="toggle($event)"
+            @click="toggle($event)"
             :disabled="disabled">
             <span v-html="text" v-show="text"></span>
             <span class="caret"></span>
         </button>
-        <slot></slot>
+        <ul class="dropdown-menu">
+            <li @click="clicked" class="dropdown-item">Somewhere here</li>
+            <li @click="clicked" class="dropdown-item">Another page link</li>
+        </ul>
     </div>
 </template>
 
@@ -34,15 +37,16 @@
 
         methods: {
             toggle(e) {
-                // hide an alert
                 this.show = !this.show
-                // Dispatch an event from the current vm that propagates all the way up to its $root
                 if (this.show) {
                     this.$dispatch('shown::dropdown')
                     e.stopPropagation()
                 } else {
                     this.$dispatch('hidden::dropdown')
                 }
+            },
+            clicked() {
+                this.show = false
             }
         },
 

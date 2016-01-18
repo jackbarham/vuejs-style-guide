@@ -14,9 +14,19 @@
 </head>
 <body id="app">
 
-    <layout-header></layout-header>
+    <header class="layout-header cf">
+        <h1>Vibecast</h1>
+        <span>Style Guide</span>
+    </header>
 
-    <div class="wrapper">
+    <div class="layout-wrapper">
+
+        <div id="modals" class="styleguide-section cf">
+            <click type="warning" position="left" @click="showModalSmall = true">Small modal</click>
+            <modal-small :show.sync="showModalSmall" title="Modal header">
+                <p slot="content">General text and form content. Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </modal-small>
+        </div>
 
         <div id="typography" class="styleguide-section">
             <div class="styleguide-text">
@@ -42,7 +52,7 @@
             </div>
         </div>
 
-        <div id="button" class="styleguide-section">
+        <div id="button" class="styleguide-section cf">
             <click type="action">Add new item</click>
             <click type="general">Confirm</click>
             <click type="warning">Delete</click>
@@ -68,12 +78,9 @@
         </div>
 
         <div id="dropdown" class="styleguide-section">
-            <drop-click text="Dropdown click">
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Completed</a></li>
-                    <li><a class="dropdown-item" href="#">Pending</a></li>
-                </ul>
-            </drop-click>
+            <dropdown text="Dropdown right" class="dropdown-right"></dropdown>
+            <dropdown text="Dropdown left" class="dropdown-left"></dropdown>
+            <visibility></visibility>
         </div>
 
         <div id="image-upload" class="styleguide-section">

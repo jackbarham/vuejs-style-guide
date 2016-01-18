@@ -21,21 +21,18 @@
         computed: {
             inputText() {
                 return {
+                    'type': this.type,
                     'label': this.label,
                     'error': this.error,
-                    'type': this.type,
                     'value': this.value,
-                    'message': this.messahe,
+                    'message': this.message,
                     'placeholder': this.placeholder
                 }
             },
             formError() {
-                if (this.error === 'false') {
-                    return false
-                } else {
+                if (this.error === 'true') {
                     return true
                 }
-                console.log(this.error);
             }
         }
 

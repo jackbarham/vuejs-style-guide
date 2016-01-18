@@ -25,6 +25,13 @@ $base-font-size-for-rem-calc: 16;
     }
 }
 
+@mixin logo() {
+    font-weight: $font-weight-semibold;
+    @include font-size(21);
+    color: $color-title;
+    letter-spacing: 0.2px;
+}
+
 @mixin text-main() {
     @include font-size(15);
     color: $color-general;

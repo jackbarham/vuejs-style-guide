@@ -7,7 +7,7 @@
 <script>
     export default {
 
-        props: ['type'],
+        props: ['type', 'position'],
 
         computed: {
             buttonClass() {
@@ -17,7 +17,8 @@
                     'button-disabled': type == 'disabled',
                     'button-action': type == 'action',
                     'button-general': type == 'general',
-                    'button-warning': type == 'warning'
+                    'button-warning': type == 'warning',
+                    'button-left': this.position == 'left',
                 }
             }
         }

@@ -26,13 +26,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-h1.t-logo {
-    font-weight: $font-weight-semibold;
-    @include font-size(21);
-    color: $color-title;
-    letter-spacing: 0.2px;
-}
-
 h2.t-header-main {
     @include font-size(29);
 }
