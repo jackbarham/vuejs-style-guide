@@ -2,7 +2,7 @@
     <ul id="sort" class="sort cf">
         <li class="sort-item {{ list.order }}" v-for="item in list">{{ item.name }} ({{ item.order}})</li>
     </ul>
-    <pre>{{ $data | json}}</pre>
+    <!--<pre>{{ $data | json}}</pre>-->
 </template>
 
 <script>
