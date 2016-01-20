@@ -1,3 +1,16 @@
+.grid-2 {
+    position: relative;
+    width: 102%;
+    left: -1%;
+    margin-bottom: 20px;
+    li {
+        float: left;
+        overflow: hidden;
+        width: 50%;
+        padding: 0 1% 2% 1%;
+    }
+}
+
 .grid-3 {
     position: relative;
     width: 102%;
@@ -21,6 +34,17 @@
         overflow: hidden;
         width: 20%;
         padding: 0 1% 2% 1%;
+    }
+}
+
+.grid-form {
+    position: relative;
+    width: 106%;
+    left: -3%;
+    > div {
+        float: left;
+        width: 50%;
+        padding: 0 3%;
     }
 }
 

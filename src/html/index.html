@@ -53,23 +53,24 @@
         </div>
 
         <div id="form" class="styleguide-section">
-            <form-input
+            <div class="grid-form cf">
+                <form-input
                     type="text"
                     label="Form label"
                     error="false"
                     value="This form has content"
                     placeholder="Placeholder text">
-            </form-input>
-
-            <form-input
+                </form-input>
+                <form-input
                     type="text"
                     label="Form label"
                     error="true"
                     message="Label replaced with error message"
                     placeholder="Placeholder text">
-            </form-input>
-
-            <form-checkbox label="Checkbox"></form-checkbox>
+                </form-input>
+                <form-select label="Searchable select" placeholder="Type to search"></form-select>
+                <form-checkbox label="Checkbox"></form-checkbox>
+            </div>
         </div>
 
         <div id="dropdown" class="styleguide-section">

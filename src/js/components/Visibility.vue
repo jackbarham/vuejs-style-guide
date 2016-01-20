@@ -1,10 +1,10 @@
 <template>
-    <div class="dropdown-right" :class="{ open: show, dropdown: !dropup, dropup: dropup}">
+    <div class="dropdown-right" :class="{open: show, dropdown: !dropup, dropup: dropup}">
         <button
-                class="dropdown-button"
-                aria-expanded="{{show}}"
-                @click="toggle($event)"
-                :disabled="disabled">
+            class="dropdown-button"
+            aria-expanded="{{show}}"
+            @click="toggle($event)"
+            :disabled="disabled">
             <span>{{ display | capitalize }}</span>
         </button>
         <ul class="dropdown-menu">

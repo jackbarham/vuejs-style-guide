@@ -21,7 +21,7 @@ html {
     background: rgba(255, 255, 255, 0.95);
     position: fixed;
     width: 100%;
-    z-index: 20;
+    z-index: 20000;
     h1 {
         @include logo();
         line-height: 60px;
