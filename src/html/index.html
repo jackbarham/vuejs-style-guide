@@ -21,11 +21,6 @@
 
     <div class="layout-wrapper">
 
-        <div id="dragdrop" class="styleguide-section">
-            <dragdrop></dragdrop>
-            <!--<div v-component="my-sortable" v-with="model: list"></div>-->
-        </div>
-
         <div id="typography" class="styleguide-section">
             <div class="styleguide-text">
                 <h2 class="t-header-main">Content header and title</h2>
@@ -92,19 +87,11 @@
             <modal-alert :show.sync="showModalAlert" title="Modal header">
                 <p slot="content">General text and form content. Incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
             </modal-alert>
+        </div>
 
-            <click type="general" position="left" @click="showModalFull = true">Full page modal</click>
-            <modal-full :show.sync="showModalFull">
-                <div slot="header">
-                    <h3>Some title</h3>
-                    <p class="t-descrete">carlcox.vibecast.com/page/item-name</p>
-                </div>
-                <div slot="content">
-                    <p>General text and form content. Incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </modal-full>
+        <div id="dragdrop" class="styleguide-section">
+            <sort-grid></sort-grid>
+            <sort-list></sort-list>
         </div>
 
     </div>
