@@ -1,0 +1,163 @@
+.medium-toolbar-arrow-under:after {
+    top: 60px;
+    border-color: #57ad68 transparent transparent transparent; }
+
+.medium-toolbar-arrow-over:before {
+    top: -8px;
+    border-color: transparent transparent #57ad68 transparent; }
+
+.medium-editor-toolbar {
+    background-color: #57ad68; }
+.medium-editor-toolbar li {
+    padding: 0; }
+.medium-editor-toolbar li button {
+    min-width: 60px;
+    height: 60px;
+    border: none;
+    border-right: 1px solid #9ccea6;
+    background-color: transparent;
+    color: #fff;
+    -webkit-transition: background-color .2s ease-in, color .2s ease-in;
+    transition: background-color .2s ease-in, color .2s ease-in; }
+.medium-editor-toolbar li button:hover {
+    background-color: #346a3f;
+    color: #fff; }
+.medium-editor-toolbar li .medium-editor-button-active {
+    background-color: #23482a;
+    color: #fff; }
+.medium-editor-toolbar li .medium-editor-button-last {
+    border-right: none; }
+
+.medium-editor-toolbar-form .medium-editor-toolbar-input {
+    height: 60px;
+    background: #57ad68;
+    color: #fff; }
+.medium-editor-toolbar-form .medium-editor-toolbar-input::-webkit-input-placeholder {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8); }
+.medium-editor-toolbar-form .medium-editor-toolbar-input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8); }
+.medium-editor-toolbar-form .medium-editor-toolbar-input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8); }
+.medium-editor-toolbar-form .medium-editor-toolbar-input:-ms-input-placeholder {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8); }
+
+.medium-editor-toolbar-form a {
+    color: #fff; }
+
+.medium-editor-toolbar-anchor-preview {
+    background: #57ad68;
+    color: #fff; }
+
+.medium-editor-placeholder:after {
+    color: #fff; }
+
+
+.medium-editor-toolbar {
+    background: $color-ok-solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #CBCBCB;
+}
+
+.medium-editor-toolbar li button {
+    min-width: 44px;
+    height: 44px;
+    border: none;
+    border-right: none;
+    background-color: transparent;
+    padding: 0;
+    color: #fff;
+    transition: all .2s linear;
+    &:hover {
+        background: darken($color-ok-solid, 15);
+    }
+}
+
+.medium-toolbar-arrow-under:after {
+    top: 44px;
+    border-color: $color-ok-solid transparent transparent transparent;
+}
+
+.medium-toolbar-arrow-over:before {
+    top: -8px;
+    border-color: transparent transparent $color-ok-solid transparent;
+}
+
+.editable {
+    width: 100%;
+    padding: 10px 15px 15px 15px;
+    min-height: 120px;
+    border: 2px solid $color-border;
+    &:hover {
+        border: 2px solid darken($color-border, 15);
+    }
+    &:focus {
+        border: 2px solid $color-ok-solid;
+    }
+}
+
+.medium-editor-placeholder:after {
+    @include text-main();
+    color: $color-disabled;
+    left: 0;
+    position: absolute;
+    top: 0;
+    font-style: inherit;
+}
+
+.medium-editor-toolbar-form .medium-editor-toolbar-input {
+    height: 44px;
+    border: 2px solid $color-ok-solid;
+    color: $color-general;
+    padding: 0 10px;
+    background: $color-white;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', 'san-serif';
+    @include text-main();
+    &:focus {
+        border: 2px solid $color-ok-solid;
+    }
+    &:placeholder-shown {
+        @include text-placeholder();
+    }
+}
+
+.medium-editor-toolbar-form a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 0;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.medium-editor-toolbar li .medium-editor-button-active {
+    background: darken($color-ok-solid, 15);;
+}
+
+.medium-editor-anchor-preview {
+    left: 0;
+    line-height: 1.4;
+    max-width: inherit;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    .medium-editor-toolbar-anchor-preview {
+        background: $color-ok-solid;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px #CBCBCB;
+        a {
+            @include text-descrete();
+            margin: 8px 12px;
+            color: #fff;
+        }
+    }
+}

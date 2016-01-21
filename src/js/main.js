@@ -3,6 +3,7 @@ var Vue = require('vue');
 import Button from './components/Button.vue';
 import Divider from './components/Divider.vue';
 import Dropdown from './components/Dropdown.vue';
+import Editor from './components/Editor.vue';
 import FormCheckbox from './components/FormCheckbox.vue';
 import FormInput from './components/FormInput.vue';
 import FormSelect from './components/FormSelect.vue';
@@ -19,6 +20,7 @@ new Vue({
         'click': Button,
         'divide': Divider,
         'dropdown': Dropdown,
+        'editor': Editor,
         'form-checkbox': FormCheckbox,
         'form-input': FormInput,
         'form-select': FormSelect,

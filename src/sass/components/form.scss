@@ -7,6 +7,10 @@
     @include text-label();
 }
 
+.form-help {
+    color: $color-ok-text;
+}
+
 .form-input {
     width: 100%;
     height: 40px;
