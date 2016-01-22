@@ -124,6 +124,36 @@
             <dropdown text="Dropdown right" class="dropdown-right"></dropdown>
             <dropdown text="Dropdown left" class="dropdown-left"></dropdown>
             <visibility></visibility>
+            <flyout>
+                <div slot="content" class="settigns cf">
+                    <h2>Page settings</h2>
+                    <form-input
+                        type="text"
+                        label="Page title"
+                        error="false"
+                        message=""
+                        value="Some page name"
+                        placeholder="Placeholder text">
+                    </form-input>
+                    <form-input
+                        type="text"
+                        label="Page URL"
+                        error="false"
+                        message=""
+                        value="some-page-name"
+                        placeholder="Placeholder text">
+                    </form-input>
+                    <form-input
+                        type="text"
+                        label="Something else"
+                        error="false"
+                        message=""
+                        value="Update this"
+                        placeholder="Placeholder text">
+                    </form-input>
+                    <click type="general">Update</click>
+                </div>
+            </flyout>
         </div>
 
         <div id="image-upload" class="styleguide-section">

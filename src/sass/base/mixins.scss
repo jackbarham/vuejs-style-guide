@@ -33,7 +33,6 @@ $base-font-size-for-rem-calc: 16;
 }
 
 @mixin text-main() {
-    @include font-size(15);
     color: $color-general;
     letter-spacing: 0.4px;
 }
@@ -46,9 +45,9 @@ $base-font-size-for-rem-calc: 16;
 }
 
 @mixin text-placeholder() {
-    @include font-size(15);
     color: $color-disabled;
     letter-spacing: 0.3px;
+    font-smoothing: antialiased;
 }
 
 @mixin text-label() {

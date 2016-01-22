@@ -4,6 +4,7 @@ import Button from './components/Button.vue';
 import Divider from './components/Divider.vue';
 import Dropdown from './components/Dropdown.vue';
 import Editor from './components/Editor.vue';
+import Flyout from './components/Flyout.vue';
 import FormCheckbox from './components/FormCheckbox.vue';
 import FormInput from './components/FormInput.vue';
 import FormSelect from './components/FormSelect.vue';
@@ -21,6 +22,7 @@ new Vue({
         'divide': Divider,
         'dropdown': Dropdown,
         'editor': Editor,
+        'flyout': Flyout,
         'form-checkbox': FormCheckbox,
         'form-input': FormInput,
         'form-select': FormSelect,
