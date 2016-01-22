@@ -5,7 +5,9 @@
             aria-expanded="{{show}}"
             @click="toggle($event)"
             :disabled="disabled">
+            <span class="dropdown-circle" :class="display"></span>
             <span>{{ display | capitalize }}</span>
+            <span class="dropdown-caret"><i class="icon-down"></i></span>
         </button>
         <ul class="dropdown-menu">
             <li v-for="item in visibility" @click="changeVis(item)" class="dropdown-item">{{ item | capitalize }}</li>

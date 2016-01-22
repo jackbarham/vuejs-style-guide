@@ -34,5 +34,10 @@ new Vue({
     data: {
         showModalAlert: false,
         showModalFull: false,
+    },
+    methods: {
+        closeDropdownsAndPopovers() {
+            this.$broadcast('hide::dropdown')
+        }
     }
 });

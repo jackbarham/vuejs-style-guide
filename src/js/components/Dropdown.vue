@@ -6,9 +6,9 @@
             @click="toggle($event)"
             :disabled="disabled">
             <span v-html="text" v-show="text"></span>
-            <span class="caret"></span>
+            <span class="dropdown-caret"><i class="icon-down"></i></span>
         </button>
-        <ul class="dropdown-menu">
+        <ul id="testy" class="dropdown-menu">
             <li @click="clicked" class="dropdown-item">Somewhere here</li>
             <li @click="clicked" class="dropdown-item">Another page link</li>
         </ul>
