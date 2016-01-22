@@ -65,8 +65,8 @@
 }
 
 .medium-editor-toolbar li button {
-    min-width: 44px;
-    height: 44px;
+    min-width: 40px;
+    height: 40px;
     border: none;
     border-right: none;
     background-color: transparent;
@@ -79,13 +79,23 @@
 }
 
 .medium-toolbar-arrow-under:after {
-    top: 44px;
+    top: 40px;
     border-color: $color-ok-solid transparent transparent transparent;
 }
 
 .medium-toolbar-arrow-over:before {
     top: -8px;
     border-color: transparent transparent $color-ok-solid transparent;
+}
+
+.medium-editor-button-first {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.medium-editor-button-last {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .editable {
@@ -143,7 +153,7 @@
 
 .medium-editor-anchor-preview {
     left: 0;
-    line-height: 1.4;
+    line-height: 40px;
     max-width: inherit;
     position: absolute;
     text-align: center;
@@ -160,4 +170,8 @@
             color: #fff;
         }
     }
+}
+
+.medium-editor-toolbar li .medium-editor-action-underline {
+    text-decoration: none;
 }
