@@ -58,3 +58,24 @@
     display: block;
     line-height: 1.3;
 }
+
+.grid-icons {
+    li {
+        float: left;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        line-height: 1;
+        color: #444444;
+
+    }
+    &.pages li {
+        @include font-size(26);
+    }
+    &.elements li {
+        @include font-size(18);
+    }
+    &.editor li {
+        @include font-size(14);
+        margin-bottom: 0;
+    }
+}

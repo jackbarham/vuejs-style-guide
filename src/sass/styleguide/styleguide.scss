@@ -1,8 +1,18 @@
 // For styleguide layout purposes only
 .styleguide-section {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+}
+
+.styleguide-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
     border-bottom: 1px solid lighten($color-border, 15);
+    h1 {
+        @include text-menulist();
+    }
+    span {
+        @include text-descrete();
+    }
 }
 
 .styleguide-text {

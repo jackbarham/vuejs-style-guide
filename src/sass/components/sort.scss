@@ -1,3 +1,18 @@
+.sort-item {
+    &:hover {
+        cursor: move;
+        opacity: 1;
+        color: $color-ok-text;
+        .sort-drag {
+            opacity: 1;
+        }
+    }
+}
+
+.sortable-chosen {
+    opacity: 0.5;
+}
+
 .sort-drag {
     float: right;
     height: 40px;
@@ -7,11 +22,6 @@
     text-align: right;
     opacity: 0.3;
     @include transition (all 0.12s linear);
-    &:hover {
-        cursor: move;
-        opacity: 1;
-        color: $color-ok-text;
-    }
 }
 
 .sort-ghost {

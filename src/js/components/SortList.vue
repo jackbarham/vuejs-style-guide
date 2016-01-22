@@ -26,7 +26,6 @@
             var vm = this;
             Sortable.create(document.getElementById('sort'), {
                 draggable: 'li.sort-item',
-                handle: '.sort-drag',
                 ghostClass: 'sort-ghost',
                 animation: 80,
                 onUpdate(evt) {

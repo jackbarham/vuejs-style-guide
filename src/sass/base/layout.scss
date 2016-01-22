@@ -16,6 +16,10 @@ html {
     padding: 6rem 2rem;
 }
 
+.layout-blur {
+    filter: blur(8px);
+}
+
 .layout-header {
     border-bottom: 1px solid lighten($color-border, 15);
     background: rgba(255, 255, 255, 0.95);

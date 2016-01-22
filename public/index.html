@@ -21,9 +21,12 @@
         <span>Style Guide</span>
     </header>
 
-    <div class="layout-wrapper">
+    <div class="layout-wrapper" :class="{'layout-blur': showModalAlert}">
 
         <div id="typography" class="styleguide-section">
+            <header class="styleguide-header">
+                <h1>Typography</h1>
+            </header>
             <div class="styleguide-text">
                 <h2 class="t-header-main">Content header and title</h2>
             </div>
@@ -47,14 +50,53 @@
             </div>
         </div>
 
-        <div id="button" class="styleguide-section cf">
+        <div id="icons" class="styleguide-section">
+            <header class="styleguide-header">
+                <h1>Icons</h1>
+            </header>
+            <ul class="grid-icons pages cf">
+                <li><i class="icon-home"></i></li>
+                <li><i class="icon-text"></i></li>
+                <li><i class="icon-audio"></i></li>
+                <li><i class="icon-video"></i></li>
+                <li><i class="icon-gallery"></i></li>
+                <li><i class="icon-gig"></i></li>
+                <li><i class="icon-release"></i></li>
+                <li><i class="icon-news"></i></li>
+                <li><i class="icon-forwarder"></i></li>
+            </ul>
+            <ul class="grid-icons elements cf">
+                <li><i class="icon-settings"></i></li>
+                <li><i class="icon-delete"></i></li>
+                <li><i class="icon-more"></i></li>
+                <li><i class="icon-play"></i></li>
+                <li><i class="icon-pause"></i></li>
+                <li><i class="icon-tick"></i></li>
+                <li><i class="icon-up"></i></li>
+                <li><i class="icon-down"></i></li>
+            </ul>
+            <ul class="grid-icons editor cf">
+                <li><i class="icon-bold"></i></li>
+                <li><i class="icon-underline"></i></li>
+                <li><i class="icon-italic"></i></li>
+                <li><i class="icon-link"></i></li>
+            </ul>
+        </div>
+
+        <section id="button" class="styleguide-section cf">
+            <header class="styleguide-header">
+                <h1>Buttons</h1>
+            </header>
             <click type="action">Add new item</click>
             <click type="general">Confirm</click>
             <click type="warning">Delete</click>
             <click type="disabled">Disabled</click>
-        </div>
+        </section>
 
         <div id="form" class="styleguide-section">
+            <header class="styleguide-header">
+                <h1>Form Elements</h1>
+            </header>
             <div class="grid-form cf">
                 <form-input
                     type="text"
@@ -77,20 +119,32 @@
         </div>
 
         <div id="dropdown" class="styleguide-section">
+            <header class="styleguide-header">
+                <h1>Dropdowns</h1>
+            </header>
             <dropdown text="Dropdown right" class="dropdown-right"></dropdown>
             <dropdown text="Dropdown left" class="dropdown-left"></dropdown>
             <visibility></visibility>
         </div>
 
         <div id="image-upload" class="styleguide-section">
+            <header class="styleguide-header">
+                <h1>Image Drag &amp; Drop</h1>
+            </header>
             <upload-image info="Minimum width 700px, will be cropped to 16:9"></upload-image>
         </div>
 
         <div id="modals" class="styleguide-section cf">
+            <header class="styleguide-header">
+                <h1>Modals</h1>
+            </header>
             <click type="warning" position="left" @click="showModalAlert = true">Alert modal</click>
         </div>
 
         <div id="dragdrop" class="styleguide-section">
+            <header class="styleguide-header">
+                <h1>Sortable Drag &amp; Drop</h1>
+            </header>
             <sort-grid></sort-grid>
             <sort-list></sort-list>
         </div>

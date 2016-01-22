@@ -2,7 +2,8 @@
 .viminfo
 .vagrant
 .DS_Store
-public/
+public/js/
+public/css/
 node_modules/
 bower_components/
 src/sass/bourbon/
