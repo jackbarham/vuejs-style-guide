@@ -10,7 +10,10 @@
     </div>
     <div class="dropzone-preview" v-else>
         <img :src="image" />
-        <button class="button button-warning dropzone-button" @click="removeImage">Delete</button>
+        <div class="dropzone-close modal-close" @click="removeImage">
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </template>
 

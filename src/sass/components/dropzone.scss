@@ -42,16 +42,21 @@
     @include text-descrete();
 }
 
-.dropzone-button {
+.dropzone-close.modal-close {
     position: absolute;
     top: 10px;
-    right: 10px;
-    display: none;
+    left: 10px;
+    visibility: hidden;
+    transform: inherit;
+    @include transition (all 0.06s linear);
+    &:hover span {
+        background-color: $color-warning-solid;
+    }
 }
 
 .dropzone-preview {
     position: relative;
-    &:hover .dropzone-button {
-        display: block;
+    &:hover .dropzone-close.modal-close {
+        visibility: visible;
     }
 }
