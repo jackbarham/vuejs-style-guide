@@ -79,6 +79,14 @@
     }
 }
 
+.dropdown-menu::before {
+    top: -8px;
+    display: block;
+    width: 200px;
+    height: 20px;
+    border-color: transparent transparent $color-ok-solid transparent;
+}
+
 .dropdown-left .dropdown-menu {
     right: -0.5rem;
 }

@@ -22,7 +22,7 @@
             return {
                 show: false,
                 visibility: ['visible', 'hidden', 'preview', 'scheduled'],
-                display: 'Dropdown select',
+                display: 'visible',
             }
         },
 

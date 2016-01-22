@@ -48,6 +48,18 @@
         .form-select-dropdown {
             border: 2px solid darken($color-border, 15);
         }
+        .dropdown-caret {
+            color: darken($color-border, 35);
+        }
+        .dropdown-caret {
+            color: $color-ok-text;
+        }
+    }
+    .dropdown-caret {
+        position: absolute;
+        right: 10px;
+        top: 2px;
+        color: darken($color-border, 20);
     }
 }
 
@@ -84,6 +96,9 @@
         border-top: 0;
         max-height: 200px;
     }
+    .dropdown-caret {
+        color: $color-ok-text;
+    }
 }
 
 .form-error {
@@ -98,7 +113,6 @@
 
 label.form-checkbox:hover {
     cursor: pointer;
-    color: $color-ok-text;
     span {
         border: 2px solid darken($color-border, 15);
     }
@@ -121,9 +135,13 @@ label.form-checkbox:hover {
     }
     input {
         display: none;
-        &:checked + span.form-checkbox-ghost {
-            background: $color-ok-solid;
-            border: 2px solid $color-ok-solid;
-        }
     }
+}
+.form-checkbox-ghost .icon-tick {
+    height: 16px;
+    width: 17px;
+    line-height: 17px;
+    text-align: center;
+    display: block;
+    font-size: 13px;
 }

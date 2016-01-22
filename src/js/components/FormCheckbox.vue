@@ -3,7 +3,9 @@
         <label class="form-checkbox t-label">
             {{ label }}
             <input type="checkbox" v-model="checked">
-            <span class="form-checkbox-ghost"></span>
+            <span class="form-checkbox-ghost">
+                <i class="icon-tick" v-show="checked"></i>
+            </span>
         </label>
     </div>
 </template>

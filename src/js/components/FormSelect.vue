@@ -1,7 +1,10 @@
 <template>
     <div class="form-item" :class="{open: show}">
-        <label class="form-label">Searchable select</label>
-        <div class="form-select" @click="toggle($event)">{{ selected }}</div>
+        <label class="form-label">Select</label>
+        <div class="form-select" @click="toggle($event)">
+            {{ selected }}
+            <span class="dropdown-caret"><i class="icon-down"></i></span>
+        </div>
         <ul class="form-select-dropdown">
             <li v-for="option in options" @click="select(option)" class="dropdown-item">{{ option.name }}</li>
         </ul>
