@@ -33,7 +33,7 @@ html {
         margin-left: 2rem;
     }
     span {
-        @include text-label();
+        @include text-dropdown();
         float: right;
         line-height: 60px;
         float: right;

@@ -51,7 +51,7 @@ $base-font-size-for-rem-calc: 16;
 }
 
 @mixin text-dropdown() {
-    @include font-size(14);
+    @include font-size(13);
     color: $color-dropdown;
     letter-spacing: 0.4px;
 }

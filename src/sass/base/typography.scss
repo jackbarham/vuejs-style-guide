@@ -51,6 +51,10 @@ p {
     @include text-placeholder();
 }
 
+.t-dropdown {
+    @include text-dropdown();
+}
+
 .t-label {
     @include text-label();
 }
