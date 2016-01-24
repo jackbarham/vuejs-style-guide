@@ -50,8 +50,14 @@ $base-font-size-for-rem-calc: 16;
     font-smoothing: antialiased;
 }
 
+@mixin text-dropdown() {
+    @include font-size(14);
+    color: $color-dropdown;
+    letter-spacing: 0.4px;
+}
+
 @mixin text-label() {
-    @include font-size(13);
+    @include font-size(12);
     color: $color-label;
     letter-spacing: 0.4px;
 }

@@ -10,7 +10,10 @@
             <span class="dropdown-caret"><i class="icon-down"></i></span>
         </button>
         <ul class="dropdown-menu">
-            <li v-for="item in visibility" @click="changeVis(item)" class="dropdown-item">{{ item | capitalize }}</li>
+            <li v-for="item in visibility" @click="changeVis(item)" class="dropdown-item" :class="item">
+                <span class="dropdown-circle" :class="item"></span>
+                {{ item | capitalize }}
+            </li>
         </ul>
     </div>
 </template>

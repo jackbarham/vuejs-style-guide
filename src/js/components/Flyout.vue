@@ -5,8 +5,9 @@
             @click="toggle($event)">
             <span class="dropdown-settings"><i class="icon-settings"></i></span>
         </span>
-        <ul class="dropdown-flyout">
+        <ul class="dropdown-flyout dropdown-arrow" @click.stop>
             <slot name="content"></slot>
+            <button class="button button-general" @click="toggle($event)">Update</button>
         </ul>
     </div>
 </template>
@@ -16,7 +17,7 @@
 
         data() {
             return {
-                show: false
+                show: false,
             }
         },
         methods: {
@@ -28,9 +29,6 @@
                 } else {
                     this.$dispatch('hidden::dropdown')
                 }
-            },
-            clicked() {
-                this.show = false
             }
         },
         events: {

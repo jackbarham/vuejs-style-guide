@@ -11,9 +11,10 @@
     background: none;
     border: none;
     padding: 0;
-    @include text-label();
+    @include text-dropdown();
+    @include transition (all 0.12s linear);
     &:hover {
-        color: $color-title;
+        color: darken($color-dropdown, 20);
     }
 }
 
@@ -62,12 +63,11 @@
     z-index: 1000;
     display: none;
     min-width: 160px;
-    margin: 7px 0 0;
+    margin: 5px 0 0;
     list-style: none;
     border-radius: 5px;
     padding: 0.5rem 0;
     box-shadow: 0px 0px 5px 0px $color-border;
-    @include text-label();
     line-height: 2.5;
     background: #fff;
     li {
@@ -75,23 +75,38 @@
         padding: 0rem 1.25rem;
         cursor: pointer;
         &:hover {
-            color: $color-title;
+            background: lighten($color-border, 17);
+        }
+        span {
+            margin-right: 0.5rem;
         }
     }
 }
 
 .dropdown-settings {
-    font-size: 16px;
+    font-size: 19px;
     margin-left: 0;
     line-height: 1;
     position: relative;
-    top: 2px;
+    top: 3px;
     color: $color-label;
     @include transition (all 0.1s linear);
     &:hover {
         cursor: pointer;
         color: $color-ok-solid;
     }
+    .icon-delete {
+        font-size: 21px;
+        @include transition (all 0.1s linear);
+        top: 4px;
+        &:hover {
+            color: $color-warning-solid;
+        }
+    }
+}
+
+.open .dropdown-settings {
+    color: $color-ok-solid;
 }
 
 .dropdown-flyout {
@@ -101,7 +116,7 @@
     display: none;
     width: 400px;
     right: -1.5rem;
-    margin: 7px 0 0;
+    margin: 15px 0 0;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px $color-border;
     background: #fff;
@@ -116,13 +131,34 @@
     }
 }
 
-
-.dropdown-menu::before {
-    top: -8px;
+.dropdown-arrow:before {
+    top: -11px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid rgba(57,70,78,.15);
+    border-style: none double solid;
     display: block;
-    width: 200px;
-    height: 20px;
-    border-color: transparent transparent $color-ok-solid transparent;
+    position: absolute;
+    right: 1.5rem;
+    vertical-align: middle;
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.dropdown-arrow:after {
+    top: -10px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-style: none double solid;
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    vertical-align: middle;
+    content: "";
+    width: 0;
+    height: 0;
 }
 
 .dropdown-left .dropdown-menu {
