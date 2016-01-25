@@ -41,7 +41,7 @@
         methods: {
             checked(item) {
                 item.selected = !item.selected;
-            },
+            }
         },
 
     };

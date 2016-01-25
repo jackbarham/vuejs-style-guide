@@ -1,0 +1,87 @@
+.add {
+    position: relative;
+}
+
+.add-fields {
+    padding-right: 60px;
+    margin-bottom: 1rem;
+    .form-item {
+        float: left;
+        &:first-child {
+            width: 38%;
+            margin-right: 4%;
+        }
+        &:last-child {
+            width: 58%;
+        }
+    }
+}
+
+.add-button {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    border: 2px solid $color-border;
+    background: white;
+    height: 40px;
+    width: 40px;
+    font-size: 32px;
+    border-radius: 5px;
+    line-height: 32px;
+    color: $color-disabled;
+    font-weight: 100;
+    @include transition (all 0.12s linear);
+    &.active {
+        border: 2px solid $color-cta-solid;
+        color: $color-cta-text;
+        &:hover {
+            background: $color-cta-solid;
+            color: $color-white;
+        }
+    }
+}
+
+.add-list {
+    border-top: 1px solid lighten($color-border, 15);
+    li {
+        position: relative;
+        border-bottom: 1px solid lighten($color-border, 15);
+        padding: 0.3rem 0;
+    }
+}
+
+.add-title {
+    @include text-menulist();
+    float: left;
+    width: 25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+a.add-link {
+    @include text-descrete();
+    display: block;
+    float: left;
+    width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 30px;
+    &:hover {
+        color: $color-ok-text;
+    }
+}
+
+.modal-close.add-remove {
+    height: 16px;
+    width: 16px;
+    span {
+        height: 16px;
+        top: 0px;
+        margin-left: 7px;
+    }
+    &:hover span {
+        background-color: $color-warning-solid;
+    }
+}

@@ -1,5 +1,6 @@
 var Vue = require('vue');
 
+import Additem from './components/Additem.vue';
 import Button from './components/Button.vue';
 import Divider from './components/Divider.vue';
 import Dropdown from './components/Dropdown.vue';
@@ -19,6 +20,7 @@ import Visibility from './components/Visibility.vue';
 new Vue({
     el: '#app',
     components: {
+        'additem': Additem,
         'click': Button,
         'divide': Divider,
         'dropdown': Dropdown,
