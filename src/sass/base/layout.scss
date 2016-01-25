@@ -18,6 +18,7 @@ html {
 
 .layout-blur {
     filter: blur(8px);
+    @include transition (all 0.4s linear);
 }
 
 .layout-header {

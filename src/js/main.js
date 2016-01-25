@@ -10,6 +10,7 @@ import FormInput from './components/FormInput.vue';
 import FormSelect from './components/FormSelect.vue';
 import ModalAlert from './components/ModalAlert.vue';
 import ModalFull from './components/ModalFull.vue';
+import Multiple from './components/Multiple.vue';
 import SortGrid from './components/SortGrid.vue';
 import SortList from './components/SortList.vue';
 import UploadImage from './components/UploadImage.vue';
@@ -28,6 +29,7 @@ new Vue({
         'form-select': FormSelect,
         'modal-alert': ModalAlert,
         'modal-full': ModalFull,
+        'multiple': Multiple,
         'sort-grid': SortGrid,
         'sort-list': SortList,
         'upload-image': UploadImage,

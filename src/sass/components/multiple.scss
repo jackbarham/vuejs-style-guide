@@ -1,0 +1,46 @@
+.multiple {
+    border-top: 1px solid lighten($color-border, 15);
+}
+
+.multiple-item {
+    padding: 0.7rem 0;
+    position: relative;
+    border-bottom: 1px solid lighten($color-border, 15);
+    &:hover {
+        cursor: pointer;
+        span {
+            border: 2px solid $color-ok-solid;
+        }
+    }
+    p {
+        @include text-main();
+        margin-bottom: 0;
+    }
+    span {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        border: 2px solid $color-border;
+        @include transition (all 0.12s linear);
+        i {
+            display: none;
+            @include transition (all 0.12s linear);
+        }
+        &.checked {
+            border: 2px solid $color-ok-solid;
+            background: $color-ok-solid;
+            i {
+                display: inline-block;
+                color: white;
+                position: absolute;
+                font-size: 12px;
+                top: 2px;
+                left: 2px;
+            }
+        }
+    }
+}
