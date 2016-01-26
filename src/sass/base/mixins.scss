@@ -44,10 +44,16 @@ $base-font-size-for-rem-calc: 16;
     letter-spacing: 0.3px;
 }
 
-@mixin text-placeholder() {
+@mixin text-disabled() {
     color: $color-disabled;
     letter-spacing: 0.3px;
+}
+
+@mixin text-placeholder() {
+    color: $color-placeholder;
+    letter-spacing: 0.3px;
     font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 @mixin text-dropdown() {

@@ -20,14 +20,28 @@
     @include text-main();
     border: 2px solid $color-border;
     @include transition (all 0.12s linear);
-    &:placeholder-shown {
-        @include text-placeholder();
-    }
     &:hover {
         border: 2px solid darken($color-border, 15);
     }
     &:focus {
         border: 2px solid $color-ok-solid;
+    }
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        @include text-placeholder();
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        @include text-placeholder();
+        opacity:  1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        @include text-placeholder();
+        opacity:  1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        @include text-placeholder();
+    }
+    &:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+        @include text-placeholder();
     }
 }
 

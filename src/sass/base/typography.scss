@@ -48,6 +48,10 @@ p {
 }
 
 .t-disabled {
+    @include text-disabled();
+}
+
+.t-placeholder {
     @include text-placeholder();
 }
 
