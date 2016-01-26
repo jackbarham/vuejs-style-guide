@@ -15,6 +15,7 @@ import Multiple from './components/Multiple.vue';
 import SortGrid from './components/SortGrid.vue';
 import SortList from './components/SortList.vue';
 import UploadImage from './components/UploadImage.vue';
+import VideoPlayer from './components/VideoPlayer.vue';
 import Visibility from './components/Visibility.vue';
 
 new Vue({
@@ -35,6 +36,7 @@ new Vue({
         'sort-grid': SortGrid,
         'sort-list': SortList,
         'upload-image': UploadImage,
+        'video-player': VideoPlayer,
         'visibility': Visibility,
     },
     data: {

@@ -13,6 +13,21 @@ $base-font-size-for-rem-calc: 16;
     font-size: $desired-rem-size + rem;
 }
 
+@mixin center-middle() {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+@mixin middle() {
+    top: 50%;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 // Reset list stlying
 @mixin remove-list-styling() {
     padding: 0;
