@@ -1,0 +1,23 @@
+.tabs-header {
+    border-bottom: 1px solid lighten($color-border, 15);
+    span {
+        display: inline-block;
+        @include text-dropdown();
+        padding-bottom: 0.7rem;
+        margin-right: 3rem;
+        @include transition (all 0.12s linear);
+        border-bottom: 2px solid transparent;
+        &.active {
+            color: $color-general;
+            border-bottom: 2px solid $color-ok-solid;
+        }
+        &:hover {
+            cursor: pointer;
+            color: $color-title;
+        }
+    }
+}
+
+.tabs-content div {
+    padding: 1rem 0;
+}

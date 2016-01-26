@@ -14,6 +14,7 @@ import ModalFull from './components/ModalFull.vue';
 import Multiple from './components/Multiple.vue';
 import SortGrid from './components/SortGrid.vue';
 import SortList from './components/SortList.vue';
+import Tabs from './components/Tabs.vue';
 import UploadImage from './components/UploadImage.vue';
 import VideoPlayer from './components/VideoPlayer.vue';
 import Visibility from './components/Visibility.vue';
@@ -35,6 +36,7 @@ new Vue({
         'multiple': Multiple,
         'sort-grid': SortGrid,
         'sort-list': SortList,
+        'tabs': Tabs,
         'upload-image': UploadImage,
         'video-player': VideoPlayer,
         'visibility': Visibility,
