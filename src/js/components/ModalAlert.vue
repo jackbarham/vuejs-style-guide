@@ -15,7 +15,7 @@
                 </div>
 
                 <div class="modal-footer cf">
-                    <button class="button button-warning" @click="show = false">Confirm action</button>
+                    <button class="button button-action" @click="show = false">Confirm action</button>
                 </div>
             </div>
         </div>
@@ -25,16 +25,7 @@
 <script>
     export default {
 
-        props: {
-            show: {
-                type: Boolean,
-                required: true,
-                twoWay: true
-            },
-            title: {
-                required: true,
-            }
-        }
+        props: ['show', 'title']
 
     };
 </script>

@@ -1,9 +1,12 @@
 .video {
-    //
+    margin-bottom: 1.5rem;
 }
 
 .video-cover {
     position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .video-play {
@@ -27,12 +30,12 @@
 
 .video-player {
     background: #000;
-    &:hover .video-close.modal-close {
+    &:hover .video-close.close {
         visibility: visible;
     }
 }
 
-.video-close.modal-close {
+.video-close.close {
     top: 22px;
     left: 10px;
     visibility: hidden;

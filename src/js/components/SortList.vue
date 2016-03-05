@@ -1,8 +1,8 @@
 <template>
-    <ul id="sort" class="sort audio">
-        <li class="sort-item cf audio-item" v-for="item in list">
+    <ul id="sort" class="sort row">
+        <li class="sort-item cf row-item" v-for="item in list">
             <img :src="item.cover">
-            <span class="audio-title">{{ item.title }}</span>
+            <span class="row-title">{{ item.title }}</span>
             <span class="sort-drag">&equals;</span>
         </li>
     </ul>

@@ -1,5 +1,5 @@
 // BOURBON
-@import "bourbon/bourbon";
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
 
 // BASE
 @import "base/normalize";
@@ -13,8 +13,8 @@
 
 // COMPONENTS
 @import "components/add";
-@import "components/audio";
 @import "components/button";
+@import "components/close";
 @import "components/divider";
 @import "components/dropdown";
 @import "components/dropzone";
@@ -23,6 +23,7 @@
 @import "components/grid";
 @import "components/modal";
 @import "components/multiple";
+@import "components/row";
 @import "components/sort";
 @import "components/tabs";
 @import "components/video";

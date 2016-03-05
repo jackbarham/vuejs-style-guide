@@ -1,11 +1,11 @@
-.audio {
+.row {
     margin: 0;
     padding: 0;
     position: relative;
     border-top: 1px solid lighten($color-border, 15);
 }
 
-.audio-item {
+.row-item {
     width: 100%;
     background: $color-white;
     border-bottom: 1px solid lighten($color-border, 15);
@@ -19,7 +19,7 @@
     }
 }
 
-.audio-title {
+.row-title {
     @include text-menulist();
     line-height: 40px;
     margin-left: 20px;
