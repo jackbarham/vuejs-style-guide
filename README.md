@@ -1,5 +1,5 @@
 
-*_NOTE:_ Based on Vue.js 1 - I'm working on a project which uses an updated version of this UI kit, all-new and rebuilt Vue.js 2. Once that is finished and tested I'll update this repo along with a clearer demo page. It's likely to be in the new year.*
+*_NOTE:_ Based on Vue.js 1. I'm working on a project which uses an updated version of this UI kit, all-new and rebuilt in Vue.js 2. Once that is finished and tested I'll update this repo along with a clearer demo page. It's likely to be in the new year.*
 
 # Vibecast UI Style Guide
 
